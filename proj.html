@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0">
+        <title>LEGALALERTNESS</title>
+        <h1><b><img src="image.jpeg"width=50px>LEGAL ALERTNESS</b></h1>
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <header>
+          <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Languages</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <button class="btnsignup-popup">Signup</button>
+          </nav>
+        </header>
+        <div class="wrapper" >
+            <div class="form-box login">
+               <h2>Login</h2>
+                <form action="#">            
+                    <div class="input-box">
+                       <span class="icon"><ion-icon
+                        name="mail"></ion-icon></span>
+                        <input type="email" placeholder="enter your email id or mobile no" required>
+                        <label>Email or Mob no</label>
+                    </div>
+            
+                    <div class ="input-box">
+                       <span class="icon"><ion-icon
+                       name="lock-closed"></ion-icon></span>
+                       <input type="password"placeholder="enter any 5 digit number" required>
+                       <label>Password</label>        
+                    </div>
+            
+                    <div class="remember-forgot">
+                       <label><input type="checkbox"> 
+                       Remember me</label>
+                       <a href="#">Forgot Password?</a>
+                    </div>
+                   <button>
+                     Login
+                   </button>
+                   <div class="login-register">
+                     <p>Don't have an account?
+                       <a href="#" 
+                       class="Register-link">Register</a>
+                     </p>
+                   </div>
+                </form>
+            </div>
+       
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#" onsubmit="redirectToWelcome(); return false;">
+                    <div class="input-box">
+                        <span class="icon-person"><ion-icon 
+                        name="person"></ion-icon></span>
+                        <input type="text" placeholder="enter your name" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon
+                        name="mail"></ion-icon></span>
+                        <input type="email"placeholder="enter your email id or mobile no " required>
+                        <label>Email or Mob no</label>
+                    </div>
+                    <div class ="input-box">
+                       <span class="icon"><ion-icon
+                       name="lock-closed"></ion-icon></span>
+                       <input type="password" placeholder="enter any 5 digit number"required>
+                       <label>Password</label>        
+                    </div>
+        
+                    <div class="remember-forgot">
+                       <label><input type="checkbox"> 
+                       agree to the terms & conditions</label>
+                       <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">
+                     Register
+                    </button>
+                    <div class="login-register">
+                        <p>Already have an account?<a
+                           href="#" 
+                           class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="scrip.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <!-- Add the following script at the end of your HTML body -->
+
+    <script>
+      function redirectToWelcome() {
+        // Perform registration logic and validation
+        var username = document.getElementById('registerUsername').value;
+        var email = document.getElementById('registerEmail').value;
+        var password = document.getElementById('registerPassword').value;
+
+        // Simulate a successful registration (replace this with actual validation logic)
+        var registrationSuccessful = true;
+
+        if (registrationSuccessful) {
+            // Redirect to the "Welcome to LegalAlertness" page
+            window.location.href = '/welcome';
+        } else {
+            // Handle unsuccessful registration (optional)
+            alert('Registration failed. Please check your details and try again.');
+        }
+       }
+    </script>
+
+    
+
+
+</body>
+</html>
+
+         </div>   
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
